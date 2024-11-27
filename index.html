@@ -155,6 +155,72 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="projekt.css">
+    <style>
+        /* Stiluri implicite pentru tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        /* Dark Mode: Schimbă fundalul tabelului */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #eaeaea;
+            }
+            table {
+                background-color: #333;
+                color: #eaeaea;
+            }
+            th {
+                background-color: #444;
+            }
+            td {
+                background-color: #555;
+            }
+            /* Schimbă culoarea bordurilor pentru tabel în Dark Mode */
+            th, td {
+                border-color: #666;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Proiect</th>
+                <th>Descriere</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Website</td>
+                <td>Dezvoltare de site-uri web responsive</td>
+            </tr>
+            <tr>
+                <td>Aplicație mobilă</td>
+                <td>Creare aplicații pentru Android</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
 </body>
 </html>
 
