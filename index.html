@@ -213,43 +213,7 @@
             document.body.style.color = darkMode ? '#eaeaea' : '#212529';
             toggleButton.textContent = darkMode ? 'Light Mode' : 'Dark Mode';
         });
-        <script>
-    const scrollToTopButton = document.getElementById('scrollToTop');
-    const toggleButton = document.getElementById('themeToggle');
-    const table = document.querySelector('table'); // Selectăm tabelul
-    const tableCells = document.querySelectorAll('th, td'); // Selectăm celulele tabelului
-
-    let darkMode = false;
-
-    // Logica pentru butonul Scroll to Top
-    window.addEventListener('scroll', () => {
-        scrollToTopButton.style.display = window.scrollY > 200 ? 'block' : 'none';
-    });
-    scrollToTopButton.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Logica pentru Dark Mode
-    toggleButton.addEventListener('click', () => {
-        darkMode = !darkMode;
-
-        // Schimbare culori generale
-        document.body.style.backgroundColor = darkMode ? '#121212' : '#f8f9fa';
-        document.body.style.color = darkMode ? '#eaeaea' : '#212529';
-        toggleButton.textContent = darkMode ? 'Light Mode' : 'Dark Mode';
-
-        // Schimbare culori tabel
-        table.style.backgroundColor = darkMode ? '#222' : '#fff';
-        table.style.color = darkMode ? '#eaeaea' : '#212529';
-
-        // Schimbare culori celule (opțional)
-        tableCells.forEach(cell => {
-            cell.style.backgroundColor = darkMode ? '#333' : '#fff';
-            cell.style.borderColor = darkMode ? '#666' : '#ddd';
-        });
-    });
-</script>
-
+       
     </script>
 </body>
 </html>
